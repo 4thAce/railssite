@@ -1,0 +1,68 @@
+<div class="financial-application-form">
+<h2>Contact Us</h2>
+
+<p>
+Of such great powers or beings there may be conceivably a survival...a survival of a hugely remote period when...consciousness was manifested, perhaps, in shapes and forms long since withdrawn before the tide of advancing humanity...forms of which poetry and legend alone have caught a flying memory and called them gods, monsters, mythical beings of all sorts and kinds...
+
+</p>
+= form_for contact_path, :method => 'POST' do
+    .form_row
+      label Your name:
+      = text_field_tag :name, nil, :class => 'main_input'
+    .form_row
+      label Your email:
+      = text_field_tag :email, nil, :class => 'main_input'
+    .form_row
+      label Your phone:
+      = text_field_tag :phone, nil, :class => 'main_input'
+    .form_row
+      label  Website:
+      = text_field_tag :website, nil, :class => 'main_input'
+    .form_row
+      label  Your address:
+      = text_area_tag :address, nil, :class => 'main_textarea'
+    .form_row
+      = submit_tag "Sign up", :class => 'submit'
+
+
+br
+h1 Aaah!  Aaaaahhh!
+p It was scabrous and wizened.
+p It was all our own.
+
+p Name, email, phone, website was
+= @name
+= @email
+= @phone
+= @website
+p Address was
+= @address
+</div>
+
+<div class="testimonials">
+      <h2>Stories and Testimonials </h2>
+      <p>
+The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far. The sciences, each straining in its own direction, have hitherto harmed us little; but some day the piecing together of dissociated knowledge will open up such terrifying vistas of reality, and of our frightful position therein, that we shall either go mad from the revelation or flee from the light into the peace and safety of a new dark age.
+      </p>
+
+      <div class="testbox">
+      <h4>Stories:  </h4>
+      <p>
+      Theosophists have guessed at the awesome grandeur of the cosmic cycle wherein our world and human race form transient incidents. They have hinted at strange survivals in terms which would freeze the blood if not masked by a bland optimism. But it is not from them that there came the single glimpse of forbidden eons which chills me when I think of it and maddens me when I dream of it. That glimpse, like all dread glimpses of truth, flashed out from an accidental piecing together of separated things--in this case an old newspaper item and the notes of a dead professor. I hope that no one else will accomplish this piecing out; certainly, if I live, I shall never knowingly supply a link in so hideous a chain. I think that the professor, too, intended to keep silent regarding the part he knew, and that he would have destroyed his notes had not sudden death seized him.
+      </p>
+      </div>
+
+      <div class="testbox">
+      <h4>The Call of Cthulhu</h4>
+      <p>
+One thing I began to suspect, and which I now fear I know, is that my uncle's death was far from natural. He fell on a narrow hill street leading up from an ancient waterfront swarming with foreign mongrels, after a careless push from a Negro sailor. I did not forget the mixed blood and marine pursuits of the cult-members in Louisiana, and would not be surprised to learn of secret methods and rites and beliefs. Legrasse and his men, it is true, have been let alone; but in Norway a certain seaman who saw things is dead. Might not the deeper inquiries of my uncle after encountering the sculptor's data have come to sinister ears? I think Professor Angell died because he knew too much, or because he was likely to learn too much. Whether I shall go as he did remains to be seen, for I have learned much now.
+      </p>
+      </div>
+      <div class="testbox">
+      <h4>Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn</h4>
+      <p>
+Then the men, having reached a spot where the trees were thinner, came suddenly in sight of the spectacle itself. Four of them reeled, one fainted, and two were shaken into a frantic cry which the mad cacophony of the orgy fortunately deadened. Legrasse dashed swamp water on the face of the fainting man, and all stood trembling and nearly hypnotised with horror.
+      </p>
+      </div>
+
+</div>

@@ -1,0 +1,2 @@
+module AliceHelper
+end

@@ -1,26 +1,32 @@
 <div class="financial-application-form">
 <h2>Contact Us</h2>
 
-<p>
-Of such great powers or beings there may be conceivably a survival...a survival of a hugely remote period when...consciousness was manifested, perhaps, in shapes and forms long since withdrawn before the tide of advancing humanity...forms of which poetry and legend alone have caught a flying memory and called them gods, monsters, mythical beings of all sorts and kinds...
+p  Of such great powers or beings there may be conceivably a survival...a survival of a hugely remote period when...consciousness was manifested, perhaps, in shapes and forms long since withdrawn before the tide of advancing humanity...forms of which poetry and legend alone have caught a flying memory and called them gods, monsters, mythical beings of all sorts and kinds...
 
-</p>
+p = h flash_messages
+
 = form_for contact_path, :method => 'POST' do
     .form_row
       label Your name:
       = text_field_tag :name, @name, :class => 'main_input', :placeholder => 'Your John Hancock'
     .form_row
       label Your email:
-      = text_field_tag :email, @email, :class => 'main_input', :placeholder => 'someone@somewhere.org'
+      = email_field_tag :email, @email, :class => 'main_input', :placeholder => 'someone@somewhere.org'
     .form_row
       label Your phone:
-      = text_field_tag :phone, @phone, :class => 'main_input', :placeholder => '+1-111-555-9999'
+      = telephone_field_tag :phone, @phone, :class => 'main_input', :placeholder => '+1-111-555-9999'
     .form_row
       label  Website:
-      = text_field_tag :website, @website, :class => 'main_input', :placeholder => 'http://laubedore.example.com'
+      = url_field_tag :website, @website, :class => 'main_input', :placeholder => 'http://laubedore.example.com'
+    .form_row
+      label  What is the secret phrase?
+      = password_field_tag :secret, :class => 'main_input'
+    .form_row
+      label  Enter it again
+      = password_field_tag :secret_confirm, :class => 'main_input'
     .form_row
       label  Your address:
-      = text_area_tag :address, @address, :class => 'main_textarea', :placeholder => 'Where you can be reached'
+      = text_area_tag :address, @address,  :class => 'main_textarea', :placeholder => 'Where you can be reached'
     .form_row
       label Sanity intact?
       = check_box_tag :sanity, 'sanity', @sanity

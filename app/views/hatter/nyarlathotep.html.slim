@@ -8,19 +8,19 @@ Of such great powers or beings there may be conceivably a survival...a survival 
 = form_for contact_path, :method => 'POST' do
     .form_row
       label Your name:
-      = text_field_tag :name, nil, :class => 'main_input'
+      = text_field_tag :name, @name, :class => 'main_input', :placeholder => 'Your John Hancock'
     .form_row
       label Your email:
-      = text_field_tag :email, nil, :class => 'main_input'
+      = text_field_tag :email, @email, :class => 'main_input'
     .form_row
       label Your phone:
-      = text_field_tag :phone, nil, :class => 'main_input'
+      = text_field_tag :phone, @phone, :class => 'main_input'
     .form_row
       label  Website:
-      = text_field_tag :website, nil, :class => 'main_input'
+      = text_field_tag :website, @website, :class => 'main_input'
     .form_row
       label  Your address:
-      = text_area_tag :address, nil, :class => 'main_textarea'
+      = text_area_tag :address, @address, :class => 'main_textarea'
     .form_row
       = submit_tag "Sign up", :class => 'submit'
 
@@ -32,8 +32,11 @@ p It was all our own.
 
 p Name, email, phone, website was
 = @name
+br
 = @email
+br
 = @phone
+br
 = @website
 p Address was
 = @address

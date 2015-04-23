@@ -6,7 +6,7 @@ class HatterController < ApplicationController
     @phone = params['phone']
     @address = params['address']
   end
-  
+
   def azathoth
   end
 end

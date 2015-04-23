@@ -11,16 +11,19 @@ Of such great powers or beings there may be conceivably a survival...a survival 
       = text_field_tag :name, @name, :class => 'main_input', :placeholder => 'Your John Hancock'
     .form_row
       label Your email:
-      = text_field_tag :email, @email, :class => 'main_input'
+      = text_field_tag :email, @email, :class => 'main_input', :placeholder => 'someone@somewhere.org'
     .form_row
       label Your phone:
-      = text_field_tag :phone, @phone, :class => 'main_input'
+      = text_field_tag :phone, @phone, :class => 'main_input', :placeholder => '+1-111-555-9999'
     .form_row
       label  Website:
-      = text_field_tag :website, @website, :class => 'main_input'
+      = text_field_tag :website, @website, :class => 'main_input', :placeholder => 'http://laubedore.example.com'
     .form_row
       label  Your address:
-      = text_area_tag :address, @address, :class => 'main_textarea'
+      = text_area_tag :address, @address, :class => 'main_textarea', :placeholder => 'Where you can be reached'
+    .form_row
+      label Sanity intact?
+      = check_box_tag :sanity, 'sanity', @sanity
     .form_row
       = submit_tag "Sign up", :class => 'submit'
 

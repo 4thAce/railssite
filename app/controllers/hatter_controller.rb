@@ -5,6 +5,7 @@ class HatterController < ApplicationController
     @website = params['website']
     @phone = params['phone']
     @address = params['address']
+    @sanity = params['sanity'] == 'sanity'
   end
 
   def azathoth
